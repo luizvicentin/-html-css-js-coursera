@@ -60,11 +60,4 @@ body {
     vertical-align: middle;
 }
 
-@media (min-width: 576px){
-    .navbar-toggler {
-        display: none;
-        
-    }
-}
-
 
