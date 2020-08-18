@@ -8,6 +8,10 @@ body {
     font-family: 'Oxygen', sans-serif;
 }
 
+.initial-loading {
+    margin-top: 60px;
+  }
+
 /* HEADER */
 #header-nav {
     background-color: #f6b319;
@@ -76,7 +80,7 @@ body {
     margin-top: 5px;
 }
 
-#phone  { /* Phone Number */
+#phone a { /* Phone Number */
     text-align: right;
     padding-bottom: 0;
 }
@@ -99,15 +103,24 @@ body {
 .container .jumbotron {
     box-shadow: 0 0 50px #3F0C1F;
     border: 2px solid #3F0C1F;
-    
+
 /* End Header */
 /**** Large Devices Only ****/
+
 @media (min-width: 1200px) {
     .container .jumbotron {
         background: url('../images/restaurant_1200.jpg') no-repeat;
         height: 950px;
     }
 }
+
+@media (min-width: 1200px) {
+    .container .jumbotron {
+        background: url('../images/restaurant_1200.jpg') no-repeat;
+        height: 950px;
+    }
+}
+
 /**** Medium Devices Only ****/
 @media (min-width: 992px) and (max-width: 1199px)  {
     /* Header */
@@ -118,7 +131,6 @@ body {
         margin: 5px 5px 5px 0;
     }
  /* End Header */
-} 
   /* Home Page */ 
     .container .jumbotron {
      background: url('../images/restaurant_992.jpg') no-repeat;
@@ -164,7 +176,7 @@ body {
         margin-right: 3px;
     }
 
-    #call-btn .btn {
+    #call-btn > a {
         font-size: 1.5em;
         display: block;
         margin: 0 20px;
@@ -173,7 +185,7 @@ body {
         background-color: #f6b319;
         color: #951C49;
     }
-    #xs-deliver .text-center visible-xs {
+    #xs-deliver {
         margin-top: 5px;
         font-size: .7em;
         letter-spacing: .1em;

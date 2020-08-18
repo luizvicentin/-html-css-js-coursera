@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav id="header-nav" class="navbar navbar-default navbar-static-top">
+        <nav id="header-nav" class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
                     <a href="index.html" class="pull-left hidden-xs">
@@ -31,7 +31,7 @@
                     </div>
 
                     
-                    <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse"  
+                    <button id="navbarToggle" type="button" class="navbar-toggle collapsed"  data-toggle="collapse"  
                         data-target="#collapsable-nav" aria-expanded="false">
                         <span class="sr-only">Toggle Navigation</span>
                         <span class="icon-bar"></span>
@@ -40,31 +40,32 @@
                     </button>                    
                 </div>
 
-                <div id="collapsable-nav" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <div id="collapsable-nav" class="navbar-collapse collapse">
                     <ul id="nav-list" class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="menu-categories.html">
-                                <span class="glyphicon glyphicon-cutlery"></span>
-                                <br class="hidden-xs">Menu</a>
+                        <li id="navHomeButtom" class="visibel-xs">
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span>Home</a>
+                        </li>
+                        <li id="navHomeButtom" ui-sref-active="active">
+                            <a ui-sref="public.menu">
+                                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-info-sign"></span>
-                                <br class="hidden-xs">About</a>
+                            <a ui-sref="public.about">
+                                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-certificate"></span>
-                                <br class="hidden-xs">Awards</a>
+                            <a ui-sref="public.awards">
+                                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
                         </li>
                         <li id="phone" class="hidden-xs">
                             <a href="tel:+55-876-1936">
                                 <span>+55-876-1936</span></a><div>* We Deliver</div>
                         </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                    </ul><!-- #nav-list -->
+                </div><!-- .collapse .navbar-collapse -->
+            </div><!-- .container -->
+        </nav><!-- #header-nav -->
     </header>
 
     <div id="call-btn" class="visible-xs">
@@ -74,6 +75,12 @@
         </a>
     </div>
     <div id="xs-deliver" class="text-center visible-xs">*We Deliver</div>
+
+    <ui-view>
+        <div class="text-center initial-loading">
+          <h2>Loading Site...</h2>
+        </div>
+    </ui-view>
 
     <div id="main-content" class="container">
         <div class="jumbotron">
