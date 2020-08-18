@@ -96,26 +96,45 @@ body {
     margin-top: -30px;
 }
 
+.container .jumbotron {
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+    
 /* End Header */
 /**** Large Devices Only ****/
 @media (min-width: 1200px) {
-
+    .container .jumbotron {
+        background: url('../images/restaurant_1200.jpg') no-repeat;
+        height: 950px;
+    }
 }
-
-
 /**** Medium Devices Only ****/
 @media (min-width: 992px) and (max-width: 1199px)  {
+    /* Header */
     logo-img {
         background: url("../images/imagesjj.png") no-repeat;
         width: 100px;
         height: 100px;
         margin: 5px 5px 5px 0;
     }
+ /* End Header */
+} 
+  /* Home Page */ 
+    .container .jumbotron {
+     background: url('../images/restaurant_992.jpg') no-repeat;
+     height: 558px;
+    }
+  /* End Home Page */    
 }
 
 /**** Smll Devices Only ****/
 @media (min-width: 768px) and (max-width: 991px) {
-    
+     /* Home Page */ 
+    .container .jumbotron {
+        background: url('../images/restaurant_768.jpg') no-repeat;
+        height: 432px;
+    }
+    /* End Home Page */      
 }
 
 /**** Extra Small Devices Only ****/
@@ -143,6 +162,27 @@ body {
     #collapsable-nav a span {
         font-size: 1em;
         margin-right: 3px;
+    }
+
+    #call-btn .btn {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951C49;
+    }
+    #xs-deliver .text-center visible-xs {
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    
+    .container .jumbotron {
+        margin-top: 30px;
+        padding: 0;
     }
 }
 
