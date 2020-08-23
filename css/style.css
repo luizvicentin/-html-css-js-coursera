@@ -245,7 +245,7 @@ h3.menu-item-title {
     font-size: 0.9em;
     font-style: italic;
 }
-
+/* END SINGLE CATEGORY PAGE */
 
 /**** Large Devices Only ****/
 @media (min-width: 1200px) {
@@ -348,10 +348,23 @@ h3.menu-item-title {
         width: 360px;
         margin: 0 auto 15px;
     }
+
+    .menu-item-photo {
+        margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+    }
+    .menu-item-description {
+        text-align: center;
+    }
 }
 
+
+
+/**** Super Extra Small Devices Only ****/
 @media (max-width: 479px) {
-    .navbar-brand h1 {
+    .navbar-brand h1 { /* Restaurante name */
         padding-top: 5px;
         font-size: 6vw;
     }
